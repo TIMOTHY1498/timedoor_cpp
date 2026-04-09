@@ -1,6 +1,7 @@
 # timedoor-project
 
-education purpose :P
+for education purpose :P
+learning c++
 
 # made in
 c++ :D
