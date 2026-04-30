@@ -35,8 +35,6 @@ void pizza(int jumlahTamu) {
     cout << "u need " << jumlahPizza << " pizzas for " << jumlahTamu << " guests." << endl;
 }
 
-
-
 int main() {
     int lemons;
     cout << "how many lemons do you want to buy? ";
