@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
@@ -15,7 +16,7 @@ void doShit1() {
 
         if (input != PASSWD) {
             cout << "\nincorrect password silly. please try again.\n" << endl;
-            return -1;
+            // the loop will continue until the correct password is entered
         }
     } while (input != PASSWD);
 
@@ -34,7 +35,7 @@ void doShit2() {
 void doShit3() { 
     cout << "=== WHILE LOOP GUESSING GAME ===\n" << endl;
 
-    int secretNumber = 42;
+    int secretNumber = rand() % 100 + 1; // generates a random number between 1 and 100
     int guess;
 
     while (true) {
@@ -45,7 +46,7 @@ void doShit3() {
             cout << "congratulations! you guessed it right!\n" << endl;
             break;
         } else {
-            cout << "wrong guess. try again.\n" << endl;
+            cout << "wrong guess sily. try again. (it's " << secretNumber << ") lol\n" << endl;
         }
     }
 }
