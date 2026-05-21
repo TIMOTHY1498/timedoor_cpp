@@ -64,6 +64,18 @@ void doShit4() {
 }
 
 void doShit5() {
+    cout << "=== LOOP WITH BREAK EXAMPLE ===\n" << endl;
+
+    for (int i = 1; i <= 10; i++) {
+        if (i == 5) {
+            cout << "breaking the loop in " << i << endl;
+            break;
+        }
+        cout << "i = " << i << endl;
+    }
+}
+
+void doShit6() {
     cout << "=== INFINITE LOOP EXAMPLE ===\n" << endl;
 
     while (true) {
@@ -72,5 +84,10 @@ void doShit5() {
 }
 
 int main() {
-    
+    doShit1();
+    doShit2();
+    doShit3();
+    doShit4();
+    doShit5();
+    doShit6();
 }
