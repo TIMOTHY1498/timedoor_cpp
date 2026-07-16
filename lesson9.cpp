@@ -22,11 +22,15 @@ int main() {
     // remove the first element from the array (the string "new")
     words[0] = "replaced";
 
+    std::cout << "[info] array content: ";
     // print the array content
     for (const auto& word : words) {
         std::cout << word << ", ";
     }
     std::cout << std::endl;
+
+    // print the size of the array
+    std::cout << "[info] size of the array: " << words.size() << std::endl;
 
     // dynamic memory allocation to remove shit
     words.clear(); // clear the vector to free memory
