@@ -55,7 +55,7 @@ namespace Shape {
     };
 }
 
-int main() {
+int main() { // oop_lesson14.cpp
     Shape::Circle circle("Circle", 0, 3.14, 6.28, 1);
     Shape::Square square("Square", 4, 4, 8, 2);
 
